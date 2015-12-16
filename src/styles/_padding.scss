@@ -1,0 +1,61 @@
+////
+/// Padding
+////
+
+
+// None
+
+.#{$space-prefix}#{$space-padding-prefix}-n {
+  padding: 0;
+}
+
+
+// Normal
+
+.#{$space-prefix}#{$space-padding-prefix}-xs {
+  padding: .25rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, .25rem);
+  }
+}
+
+.#{$space-prefix}#{$space-padding-prefix}-sm {
+  padding: .5rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, .5rem);
+  }
+}
+
+.#{$space-prefix}#{$space-padding-prefix}-md {
+  padding: 1rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, 1rem);
+  }
+}
+
+.#{$space-prefix}#{$space-padding-prefix}-lg {
+  padding: 1.5rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, 2rem);
+  }
+}
+
+.#{$space-prefix}#{$space-padding-prefix}-xl {
+  padding: 4rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, 4rem);
+  }
+}
+
+.#{$space-prefix}#{$space-padding-prefix}-2xl {
+  padding: 7rem;
+
+  &-v {
+    @include share(padding-top, padding-bottom, 7rem);
+  }
+}
