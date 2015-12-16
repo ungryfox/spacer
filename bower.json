@@ -1,6 +1,7 @@
 {
   "name": "spacer",
   "description": "Utilities package to control spacing",
+  "main": "dist/styles/spacer.css",
   "license": "MIT",
   "homepage": "https://github.com/ungryfox/spacer",
   "ignore": [
