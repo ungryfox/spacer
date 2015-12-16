@@ -1,0 +1,9 @@
+{
+  "name": "spacer",
+  "description": "Utilities package to control spacing",
+  "license": "MIT",
+  "homepage": "https://github.com/ungryfox/spacer",
+  "ignore": [
+    "**/.*"
+  ]
+}
