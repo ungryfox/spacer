@@ -12,6 +12,9 @@ module.exports = function(grunt) {
       }
     },
     browserSync: {
+      options: {
+        background: true
+      },
       server: {
         options: {
           server: {
@@ -23,13 +26,22 @@ module.exports = function(grunt) {
           port: 9000
         }
       }
+    },
+    watch: {
+      sass: {
+        files: ['src/styles/{,*/}*.scss'],
+        tasks: ['sass:server']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', [
-    'browserSync:server'
+    'sass:server',
+    'browserSync:server',
+    'watch'
   ]);
 };
