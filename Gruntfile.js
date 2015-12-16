@@ -15,7 +15,10 @@ module.exports = function(grunt) {
       server: {
         options: {
           server: {
-            baseDir: 'docs',
+            baseDir: [
+              'docs',
+              'tmp'
+            ],
           },
           port: 9000
         }
